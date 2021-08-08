@@ -2,6 +2,7 @@ interface HeaderProps {
   name: string;
   place?: string;
 }
+
 const Header = ({ name, place = "VietNam" }: HeaderProps) => {
   return (
     <h1>

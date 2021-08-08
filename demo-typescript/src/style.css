@@ -12,9 +12,8 @@ select {
   width: 1200px;
   margin-left: 30px;
 }
-
 .add-product {
-  margin-top: 20px;
+  margin-top: 80px;
 }
 input {
   height: 30px;
@@ -47,8 +46,16 @@ button {
 }
 h1 {
   display: inline;
-  
 }
 .header-title {
   margin-top: 20px;
+  font-size: 20px;
+  line-height: 40px;
+}
+.time {
+  margin-bottom: 40px;
+  margin-top: 20px;
+}
+.content {
+  margin-top: 30px;
 }

@@ -4,10 +4,13 @@ import Product from "./Product";
 
 const Index = () => {
   const [name, setName] = useState<string>("Sneaker");
+
   const onChangeName = (event: ChangeEvent<{ value: unknown }>) => {
     setName(event.target.value as string);
   };
+
   const [time, setTime] = useState<Date>(() => new Date(Date.now()));
+
   useEffect(() => {
     const timer = setInterval(() => setTime(new Date(Date.now())), 1000);
     return () => {
@@ -26,7 +29,7 @@ const Index = () => {
             <option value="Jean">Jean</option>
           </select>
         </div>
-        <div>Time: {time.toUTCString()}</div>
+        <div className="time">Time: {time.toUTCString()}</div>
         <hr />
       </div>
       <div>
